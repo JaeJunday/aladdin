@@ -6,4 +6,5 @@ pnpm install --prefix srcs
 pnpm add --prefix srcs --save-dev @types/three
 
 
-pnpm --prefix srcs run dev
+# pnpm --prefix srcs run dev
+tail -f /dev/null
