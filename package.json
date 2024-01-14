@@ -1,6 +1,7 @@
 {
   "private": true,
   "style": "app/styles/tailwind.css",
+  "homepage": "https://JaeJunday.github.io/blog",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -12,7 +13,8 @@
     "flowbite": "^2.2.1",
     "next": "^14.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "devDependencies": {
     "@types/node": "20.8.10",
@@ -21,6 +23,7 @@
     "@types/three": "^0.160.0",
     "autoprefixer": "^10.4.16",
     "flowbite-react": "^0.7.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.32",
     "react-devtools": "^5.0.0",
     "tailwindcss": "^3.4.0",
