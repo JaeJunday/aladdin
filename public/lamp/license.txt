@@ -1,0 +1,11 @@
+Model Information:
+* title:	Alladin's Lamp
+* source:	https://sketchfab.com/3d-models/alladins-lamp-4aee21ad3f804c1abe1d846eb31d6269
+* author:	carrtoonist (https://sketchfab.com/carrtoonist)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Alladin's Lamp" (https://sketchfab.com/3d-models/alladins-lamp-4aee21ad3f804c1abe1d846eb31d6269) by carrtoonist (https://sketchfab.com/carrtoonist) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

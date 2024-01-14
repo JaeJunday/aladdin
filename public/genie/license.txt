@@ -1,0 +1,11 @@
+Model Information:
+* title:	Aladdin Genie - 3D Character
+* source:	https://sketchfab.com/3d-models/aladdin-genie-3d-character-3a7a081ac61d4c649a3361639d1e09bf
+* author:	Robert Livingston (https://sketchfab.com/madsoggytoast)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Aladdin Genie - 3D Character" (https://sketchfab.com/3d-models/aladdin-genie-3d-character-3a7a081ac61d4c649a3361639d1e09bf) by Robert Livingston (https://sketchfab.com/madsoggytoast) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

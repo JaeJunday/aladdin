@@ -1,0 +1,314 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8090,
+      "max": [
+        4.139400005340576,
+        3.1303300857543945,
+        4.627130031585693
+      ],
+      "min": [
+        -4.139400005340576,
+        -3.130350112915039,
+        -1.884809970855713
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 97080,
+      "componentType": 5126,
+      "count": 8090,
+      "max": [
+        0.9999907612800598,
+        0.999994695186615,
+        1.0
+      ],
+      "min": [
+        -0.9999907612800598,
+        -0.999994695186615,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8090,
+      "max": [
+        0.9935600161552429,
+        0.9947999715805054
+      ],
+      "min": [
+        0.007639999967068434,
+        0.005040000192821026
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 44352,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 194160,
+      "componentType": 5126,
+      "count": 21134,
+      "max": [
+        14.451109886169434,
+        5.419960021972656,
+        9.106929779052734
+      ],
+      "min": [
+        -19.76668930053711,
+        -5.419960021972656,
+        -3.9303300380706787
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 447768,
+      "componentType": 5126,
+      "count": 21134,
+      "max": [
+        0.9999902844429016,
+        0.9999865889549255,
+        1.0
+      ],
+      "min": [
+        -0.9999985098838806,
+        -0.9999865889549255,
+        -0.999951183795929
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 64720,
+      "componentType": 5126,
+      "count": 21134,
+      "max": [
+        0.9957600235939026,
+        0.9941700100898743
+      ],
+      "min": [
+        0.010529999621212482,
+        0.005040000192821026
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 177408,
+      "componentType": 5125,
+      "count": 121248,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "carrtoonist (https://sketchfab.com/carrtoonist)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/alladins-lamp-4aee21ad3f804c1abe1d846eb31d6269",
+      "title": "Alladin's Lamp"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 662400,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 233792,
+      "byteOffset": 662400,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 701376,
+      "byteOffset": 896192,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1597568,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Gold.PBR_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Gold.PBR",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "roughnessFactor": 0.08708079268292684
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Lamp.Lid_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Lamp.Bottom_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.08919718116521835,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.9805752852257353e-17,
+        -0.08919718116521835,
+        0.0,
+        0.0,
+        0.08919718116521835,
+        1.9805752852257353e-17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        0.19598000000000004,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.19598000000000004,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.19598000000000004,
+        0.0,
+        0.40613,
+        -0.20693000000000003,
+        2.3728799999999994,
+        1.0
+      ],
+      "name": "Lamp.Lid"
+    },
+    {
+      "mesh": 0,
+      "name": "Lamp.Lid_0"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.18974000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.18974000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.18974000000000005,
+        0.0,
+        0.4348600000000001,
+        -0.20693000000000003,
+        0.7694400000000001,
+        1.0
+      ],
+      "name": "Lamp.Bottom"
+    },
+    {
+      "mesh": 1,
+      "name": "Lamp.Bottom_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
