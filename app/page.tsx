@@ -47,32 +47,26 @@ function Home() {
     const loader = new GLTFLoader();
     // genie
     const callGenie = () => {
-      loader.load(
-        "https://JaeJunday.github.io/blog/genie/scene.gltf",
-        (gltf: { scene: any }) => {
-          gltf.scene.scale.set(1.5, 1.5, 1.5);
-          gltf.scene.position.set(0, 1.9, 0);
-          gltf.scene.rotation.set(1.2, 0, 0);
-          scene.add(gltf.scene);
-        }
-      );
+      loader.load("/genie/scene.gltf", (gltf: { scene: any }) => {
+        gltf.scene.scale.set(1.5, 1.5, 1.5);
+        gltf.scene.position.set(0, 1.9, 0);
+        gltf.scene.rotation.set(1.2, 0, 0);
+        scene.add(gltf.scene);
+      });
     };
     // callGenie();
 
     // lamp
-    loader.load(
-      "https://JaeJunday.github.io/blog/lamp/scene.gltf",
-      (gltf: { scene: any }) => {
-        scene.add(gltf.scene);
+    loader.load("/lamp/scene.gltf", (gltf: { scene: any }) => {
+      scene.add(gltf.scene);
 
-        const animate = () => {
-          controls.update();
-          renderer.render(scene, camera);
-          requestAnimationFrame(animate);
-        };
-        animate();
-      }
-    );
+      const animate = () => {
+        controls.update();
+        renderer.render(scene, camera);
+        requestAnimationFrame(animate);
+      };
+      animate();
+    });
 
     const handleResize = () => {
       const newWidth = window.innerWidth;
