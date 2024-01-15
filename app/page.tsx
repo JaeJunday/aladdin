@@ -45,8 +45,9 @@ function Home() {
     controls.dampingFactor = 0.2;
 
     const loader = new GLTFLoader();
+
     // genie
-    const callGenie = () => {
+    const callGenie = async () => {
       loader.load("/aladdin/genie/scene.gltf", (gltf: { scene: any }) => {
         gltf.scene.scale.set(1.5, 1.5, 1.5);
         gltf.scene.position.set(0, 1.9, 0);
@@ -54,18 +55,10 @@ function Home() {
         scene.add(gltf.scene);
       });
     };
-    // callGenie();
 
     // lamp
     loader.load("/aladdin/lamp/scene.gltf", (gltf: { scene: any }) => {
       scene.add(gltf.scene);
-
-      const animate = () => {
-        controls.update();
-        renderer.render(scene, camera);
-        requestAnimationFrame(animate);
-      };
-      animate();
     });
 
     const handleResize = () => {
@@ -86,7 +79,7 @@ function Home() {
       smoothCameraAnimation(startPosition, targetPosition, 2000, controls); // 3초 동안 애니메이션
     };
 
-    const onClick = (event: { clientX: number; clientY: number }) => {
+    const onClick = async (event: { clientX: number; clientY: number }) => {
       // 마우스 좌표 정규화
       const mouse = new THREE.Vector2(
         (event.clientX / window.innerWidth) * 2 - 1,
@@ -103,14 +96,20 @@ function Home() {
       // 클릭된 객체 확인
       if (intersects.length > 0) {
         const clickedObject = intersects[0].object;
+        console.log(intersects);
         // 램프 누르면
         if (clickedObject.name === "LampBottom_0") {
-          callGenie();
-          setTimeout(() => {
-            clickAnimation();
-          }, 100);
+          console.log(clickedObject.name);
+          await callGenie();
+          clickAnimation();
         }
       }
+    };
+
+    const updateFrame = () => {
+      controls.update();
+      renderer.render(scene, camera);
+      requestAnimationFrame(updateFrame);
     };
 
     // 클릭 이벤트 리스너 등록
@@ -119,6 +118,9 @@ function Home() {
 
     // 초기 화면 사이즈 설정
     handleResize();
+
+    // 프레임 조정
+    updateFrame();
 
     return () => {
       window.removeEventListener("click", onClick);
