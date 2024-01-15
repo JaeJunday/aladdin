@@ -30,8 +30,8 @@ function Home() {
     const topLight = new THREE.DirectionalLight("white", 5);
 
     topLight.position.set(0, 20, 0);
-    bottom.position.set(0, -20, 0);
     leftLight.position.set(-10, -20, 5);
+    bottom.position.set(0, -0.5, 0);
     rightLight.position.set(10, -20, 5);
 
     scene.add(bottom);
