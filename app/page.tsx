@@ -44,15 +44,19 @@ function Home() {
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
 
+    // gltf loader
     const loader = new GLTFLoader();
 
     // genie
     const callGenie = async () => {
-      loader.load("/aladdin/genie/scene.gltf", (gltf: { scene: any }) => {
-        gltf.scene.scale.set(1.5, 1.5, 1.5);
-        gltf.scene.position.set(0, 1.9, 0);
-        gltf.scene.rotation.set(1.2, 0, 0);
-        scene.add(gltf.scene);
+      return new Promise<void>((resolve) => {
+        loader.load("/aladdin/genie/scene.gltf", (gltf: { scene: any }) => {
+          gltf.scene.scale.set(1.5, 1.5, 1.5);
+          gltf.scene.position.set(0, 1.9, 0);
+          gltf.scene.rotation.set(1.2, 0, 0);
+          scene.add(gltf.scene);
+          resolve();
+        });
       });
     };
 
@@ -99,7 +103,6 @@ function Home() {
         console.log(intersects);
         // 램프 누르면
         if (clickedObject.name === "LampBottom_0") {
-          console.log(clickedObject.name);
           await callGenie();
           clickAnimation();
         }
