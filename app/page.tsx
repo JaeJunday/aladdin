@@ -47,7 +47,7 @@ function Home() {
     const loader = new GLTFLoader();
     // genie
     const callGenie = () => {
-      loader.load("/blog/genie/scene.gltf", (gltf: { scene: any }) => {
+      loader.load("/aladdin/genie/scene.gltf", (gltf: { scene: any }) => {
         gltf.scene.scale.set(1.5, 1.5, 1.5);
         gltf.scene.position.set(0, 1.9, 0);
         gltf.scene.rotation.set(1.2, 0, 0);
@@ -57,7 +57,7 @@ function Home() {
     // callGenie();
 
     // lamp
-    loader.load("/blog/lamp/scene.gltf", (gltf: { scene: any }) => {
+    loader.load("/aladdin/lamp/scene.gltf", (gltf: { scene: any }) => {
       scene.add(gltf.scene);
 
       const animate = () => {
@@ -106,7 +106,9 @@ function Home() {
         // 램프 누르면
         if (clickedObject.name === "LampBottom_0") {
           callGenie();
-          clickAnimation();
+          setTimeout(() => {
+            clickAnimation();
+          }, 100);
         }
       }
     };
